@@ -1,13 +1,13 @@
 import random
 def play_game():
-    player_cards = []
-    computer_cards = []
+    player_cards = []                                                               # list of your cards
+    computer_cards = []                                                             # list of computers cards
     game_is_finished = False
 
     print("Welcome to Blackjack.")
 
     def draw_a_card():
-        cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+        cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]                        # list of cards you can draw
         card = cards[random.randint(0, len(cards) - 1)]
         return card
 
